@@ -6,28 +6,28 @@ import Link from 'next/link'
 
 // Константи для даних
 const BEER_ITEMS = [
-    { src: '/medove2.jpg', title: 'Медове', desc: "Освіжаюче світле пиво з м'яким смаком та легким ароматом" },
-    { src: '/firmove6.png', title: 'Фірмове', desc: 'Унікальні сорти крафтового пива з ексклюзивними рецептурами'},
-    { src: '/pshen5.jpg', title: 'Пшеничне пиво', desc: 'Свіже пшеничне пиво з фруктовими нотами та м\'якою піною'},
-    { src: '/dusha.jpg', title: 'Душа бровара', desc: 'Насичене темне пиво з карамельними нотами' },
-    { src: '/koryf2.jpg', title: 'Опілля Корифей', desc: 'Багате темне пиво з карамеллю та гіркуватим присмаком' },
-    { src: '/blanche2.jpg', title: 'Бланш', desc: 'Легке та освіжаюче з цитрусовими нотами'},
-    { src: '/bile4.jpg', title: 'Біле', desc: 'Світле, питке з чистым хмелевим ароматом' },
-    { src: '/odeske2.jpg', title: 'Одеське', desc: 'Класичне світле пиво, легке та збалансоване' },
-    { src: '/porter2.jpg', title: 'Портер', desc: 'Інтенсивне темне пиво з нотами карамелі та темного солоду' },
-    { src: '/zhig2.jpg', title: 'Жигулівське', desc: 'Класичне світле пиво з м\'яким смаком' },
-    { src: '/сeske_spec.jpg', title: 'Чеське спеціальне', desc: 'Насичене пиво з яскравою хмелевою гірчинкою' },
+    { src: '/medove2.jpg', title: 'Медове' },
+    { src: '/firmove6.png', title: 'Фірмове' },
+    { src: '/pshen5.jpg', title: 'Пшеничне пиво' },
+    { src: '/dusha.jpg', title: 'Душа бровара' },
+    { src: '/koryf2.jpg', title: 'Опілля Корифей' },
+    { src: '/blanche2.jpg', title: 'Бланш' },
+    { src: '/bile4.jpg', title: 'Біле' },
+    { src: '/odeske2.jpg', title: 'Одеське' },
+    { src: '/porter2.jpg', title: 'Портер' },
+    { src: '/zhig2.jpg', title: 'Жигулівське' },
+    { src: '/сeske_spec.jpg', title: 'Чеське спеціальне' },
 ]
 
 const DRINK_ITEMS = [
-    { src: '/prosecco.jpg', title: 'Вино Prosecco', desc: 'Ігристий, легкий та освіжаючий напій з фруктовими нотами' },
-    { src: '/lymonad.jpg', title: 'Сидр', desc: 'Класичний яблучний сидр з освіжаючим та солодкуватим смаком' },
-    { src: '/kvas.jpg', title: 'Безалкогольні напої', desc: 'Освіжаючий хлібний квас з характерною кислинкою' },
-    { src: '/glyntwein.jpg', title: 'Вино Glühwein', desc: 'Ароматне глінтвейн з пряностями та фруктами' },
-    { src: '/sydr-frag2.jpg', title: 'Сидр полуничний', desc: 'Фруктовий сидр з яскравим смаком полуниці' },
-    { src: '/sydr.jpg', title: 'Сидр яблучний', desc: 'Освіжаючий сидр з соковитих яблук' },
-    { src: '/mango.jpg', title: 'Напій манго', desc: 'Солодкий та тропічний безалкогольний напій з манго' },
-    { src: '/ruby-grande.jpg', title: 'Вино Ruby Grande', desc: 'Насичене червоне вино з ягідними та пряними нотами' },
+    { src: '/prosecco.jpg', title: 'Вино Prosecco' },
+    { src: '/lymonad.jpg', title: 'Сидр' },
+    { src: '/kvas.jpg', title: 'Безалкогольні напої' },
+    { src: '/glyntwein.jpg', title: 'Вино Glühwein' },
+    { src: '/sydr-frag2.jpg', title: 'Сидр полуничний' },
+    { src: '/sydr.jpg', title: 'Сидр яблучний' },
+    { src: '/mango.jpg', title: 'Напій манго' },
+    { src: '/ruby-grande.jpg', title: 'Вино Ruby Grande' },
 ]
 
 const STORE_ITEMS = [
@@ -38,11 +38,11 @@ const STORE_ITEMS = [
 ]
 
 const SNACK_ITEMS = [
-    { src: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Чипси', desc: 'Різноманітні чипси, сухарики та інші хрусткі снеки' },
-    { src: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: "М'ясо", desc: 'Ковбаси, сир, м\'ясні нарізки та ароматні копченості' },
-    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Кукурудза', desc: 'Асорті з різних сортів сиру та свіжих фруктів' },
-    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Арахіс', desc: 'Асорті з різних сортів сиру та свіжих фруктів' },
-    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Риба', desc: 'Асорті з різних сортів сиру та свіжих фруктів' },
+    { src: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Чипси' },
+    { src: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: "М'ясо" },
+    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Кукурудза' },
+    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Арахіс' },
+    { src: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80', title: 'Риба' },
 ]
 
 // Компоненти
@@ -74,14 +74,13 @@ const Header = () => (
     </header>
 )
 
-const ProductCard = ({ src, title, desc }) => (
+const ProductCard = ({ src, title }) => (
     <div className="product-card">
         <div className="product-img">
             <Image src={src} alt={title} width={200} height={200} />
         </div>
-        <div className="product-info">
-            <h3>{title}</h3>
-            <p>{desc}</p>
+        <div className="product-info" style={{ textAlign: 'center' }}>
+            <h3 style={{ fontSize: '3.0rem', fontWeight: '700' }}>{title}</h3>
         </div>
     </div>
 )
