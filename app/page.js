@@ -20,7 +20,7 @@ const BEER_ITEMS = [
 ]
 
 const DRINK_ITEMS = [
-    { src: '/prosecco.jpg', title: 'Вино Prosecco' },
+    { src: '/sizarini.jpg', title: 'Вино Prosecco' },
     { src: '/Lemonade.jpg', title: 'Сидр' },
     { src: '/quas.jpg', title: 'Безалкогольні напої' },
     { src: '/glyntwine.jpg', title: 'Вино Glühwein' },
