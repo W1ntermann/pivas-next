@@ -21,9 +21,9 @@ const BEER_ITEMS = [
 
 const DRINK_ITEMS = [
     { src: '/prosecco.jpg', title: 'Вино Prosecco' },
-    { src: '/lymonad.jpg', title: 'Сидр' },
-    { src: '/kvas.jpg', title: 'Безалкогольні напої' },
-    { src: '/glyntwein.jpg', title: 'Вино Glühwein' },
+    { src: '/Lemonade.jpg', title: 'Сидр' },
+    { src: '/quas.jpg', title: 'Безалкогольні напої' },
+    { src: '/glyntwine.jpg', title: 'Вино Glühwein' },
     { src: '/sydr-frag2.jpg', title: 'Сидр полуничний' },
     { src: '/sydr.jpg', title: 'Сидр яблучний' },
     { src: '/mango.jpg', title: 'Напій манго' },
