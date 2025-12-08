@@ -250,3 +250,25 @@ header .container { padding-left: 6px; }
   font-weight: 700;
   line-height: 1.2;
 }
+.footer-section a {
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: #FFD700 !important;
+    text-decoration: underline !important;
+}
+
+@media (max-width: 768px) {
+    .footer-section p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .footer-section a {
+        margin-top: 2px;
+        word-break: break-all;
+    }
+}
