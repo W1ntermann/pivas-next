@@ -347,8 +347,42 @@ export default function Home() {
                         </div>
                         <div className="footer-section">
                             <h3>Контакти</h3>
-                            <p><i className="fas fa-envelope"></i> Email: katasonovd7@gmail.com</p>
-                            <p><i className="fas fa-phone"></i> Телефон: +380 97 964 64 15</p>
+                            <p>
+                                <i className="fas fa-envelope"></i> 
+                                Email:{" "}
+                                <a 
+                                    href="mailto:katasonovd7@gmail.com" 
+                                    style={{ 
+                                        color: 'inherit', 
+                                        textDecoration: 'none',
+                                        borderBottom: '1px solid var(--yellow)',
+                                        paddingBottom: '1px',
+                                        transition: 'color 0.3s ease'
+                                    }}
+                                    onMouseOver={(e) => e.currentTarget.style.color = '#FFD700'}
+                                    onMouseOut={(e) => e.currentTarget.style.color = 'inherit'}
+                                >
+                                    katasonovd7@gmail.com
+                                </a>
+                            </p>
+                            <p>
+                                <i className="fas fa-phone"></i> 
+                                Телефон:{" "}
+                                <a 
+                                    href="tel:+380979646415" 
+                                    style={{ 
+                                        color: 'inherit', 
+                                        textDecoration: 'none',
+                                        borderBottom: '1px solid var(--yellow)',
+                                        paddingBottom: '1px',
+                                        transition: 'color 0.3s ease'
+                                    }}
+                                    onMouseOver={(e) => e.currentTarget.style.color = '#FFD700'}
+                                    onMouseOut={(e) => e.currentTarget.style.color = 'inherit'}
+                                >
+                                    +380 97 964 64 15
+                                </a>
+                            </p>
                         </div>
                         <div className="footer-section">
                             <h3>Соціальні мережі</h3>
