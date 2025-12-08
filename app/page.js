@@ -347,8 +347,8 @@ export default function Home() {
                         </div>
                         <div className="footer-section">
                             <h3>Контакти</h3>
-                            <p><i className="fas fa-envelope"></i> Email: info@pivas.ua</p>
-                            <p><i className="fas fa-phone"></i> Телефон: 0800 123 456</p>
+                            <p><i className="fas fa-envelope"></i> Email: katasonovd7@gmail.com</p>
+                            <p><i className="fas fa-phone"></i> Телефон: +380 97 964 64 15</p>
                         </div>
                         <div className="footer-section">
                             <h3>Соціальні мережі</h3>
